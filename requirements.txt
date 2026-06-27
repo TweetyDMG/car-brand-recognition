@@ -1,0 +1,32 @@
+# Детекция
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Классификация
+tensorflow>=2.13.0
+keras>=2.13.0
+
+# Работа с изображениями
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Визуализация
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+PyYAML>=6.0
+tqdm>=4.65.0
+pandas>=2.0.0
+
+# Roboflow (опционально)
+roboflow>=1.1.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Jupyter (для экспериментов)
+jupyter>=1.0.0
+notebook>=7.0.0

@@ -1,0 +1,62 @@
+# ─── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# ─── Virtual environment ─────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ─── IDE / Редакторы ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── TensorFlow / TensorBoard ────────────────────────────────
+*.tfevents.*
+events.out.tfevents.*
+
+# ─── YOLO / Ultralytics ──────────────────────────────────────
+runs/
+*.cache
+labels.cache
+
+# ─── Данные (скачиваются отдельно) ───────────────────────────
+datasets/
+test_images/
+results/
+
+# ─── Модели (тяжёлые веса — через LFS или отдельная поставка) ─
+models/
+*.pt
+*.pth
+*.keras
+*.h5
+*.hdf5
+
+# ─── Логи / отчёты ───────────────────────────────────────────
+logs/
+*.log
+wandb/
+
+# ─── Системные файлы ─────────────────────────────────────────
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/

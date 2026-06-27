@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "car-brand-recognition"
+version = "1.0.0"
+description = "Распознавание марок автомобилей по изображению — YOLO + EfficientNet"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["computer-vision", "yolo", "efficientnet", "car-logo-recognition", "deep-learning"]
+
+authors = [
+    {name = "Рогачев Артем Юрьевич"},
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "ultralytics>=8.0.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "tensorflow>=2.13.0",
+    "keras>=2.13.0",
+    "opencv-python>=4.8.0",
+    "Pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "PyYAML>=6.0",
+    "tqdm>=4.65.0",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "roboflow>=1.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/<your-org>/car-brand-recognition"
+Source = "https://github.com/<your-org>/car-brand-recognition"

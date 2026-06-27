@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  car-brand-recognition:
+    build: .
+    image: car-brand-recognition:latest
+    container_name: car-brand-recognition
+    runtime: nvidia  # для GPU (NVIDIA Container Toolkit)
+    environment:
+      - DISPLAY=${DISPLAY}
+      - ROBOFLOW_API_KEY=${ROBOFLOW_API_KEY}
+    volumes:
+      - ./models:/app/models          # веса моделей
+      - ./test_images:/app/test_images # тестовые изображения
+      - /tmp/.X11-unix:/tmp/.X11-unix # проброс X11 для GUI
+    entrypoint: ["python", "app_gui.py"]
